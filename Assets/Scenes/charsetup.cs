@@ -4,19 +4,11 @@ public class charsetup : MonoBehaviour
 {
     public GameObject[] characterPrefabs;
     public GameObject[] petPrefabs;
-    private GameObject instantiatedCharacter;
-    private GameObject instantiatedPet;
 
     void Start()
     {
-        string selectedCharacterName = PlayerPrefs.GetString("SelectedCharacter", "");
-        string selectedPetName = PlayerPrefs.GetString("SelectedPet", "");
-
-        if (string.IsNullOrEmpty(selectedCharacterName) || string.IsNullOrEmpty(selectedPetName))
-        {
-            Debug.LogError("Selected character or pet not found in PlayerPrefs");
-            return;
-        }
+        string selectedCharacterName = PlayerPrefs.GetString("SelectedCharacter");
+        string selectedPetName = PlayerPrefs.GetString("SelectedPet");
 
         InstantiateSelectedCharacter(selectedCharacterName);
         InstantiateSelectedPet(selectedPetName);
@@ -28,12 +20,11 @@ public class charsetup : MonoBehaviour
         {
             if (characterPrefab.name == characterName)
             {
-                instantiatedCharacter = Instantiate(characterPrefab, new Vector3(-2, 0, 0), Quaternion.identity);
+                Instantiate(characterPrefab, new Vector3(-2, 0, 0), Quaternion.identity);
                 Debug.Log("Instantiated Character: " + characterName);
-                return;
+                break;
             }
         }
-        Debug.LogError("Character prefab not found: " + characterName);
     }
 
     void InstantiateSelectedPet(string petName)
@@ -42,11 +33,10 @@ public class charsetup : MonoBehaviour
         {
             if (petPrefab.name == petName)
             {
-                instantiatedPet = Instantiate(petPrefab, instantiatedCharacter.transform.position + new Vector3(1, 0, 0), Quaternion.identity);
+                Instantiate(petPrefab, new Vector3(2, 0, 0), Quaternion.identity);
                 Debug.Log("Instantiated Pet: " + petName);
-                return;
+                break;
             }
         }
-        Debug.LogError("Pet prefab not found: " + petName);
     }
 }
