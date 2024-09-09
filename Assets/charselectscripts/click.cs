@@ -2,30 +2,33 @@ using UnityEngine;
 
 public class click : MonoBehaviour
 {
-    public characterSelection characterSelectionManager;
+    private characterSelection characterSelectionManager;
+
+    void Start()
+    {
+        characterSelectionManager = GetComponent<characterSelection>();
+    }
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Debug.Log("Mouse Position: " + mousePosition);
 
             RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
 
             if (hit.collider != null)
             {
                 GameObject clickedObject = hit.collider.gameObject;
-                Debug.Log("Object clicked: " + clickedObject.name);
 
                 if (clickedObject.CompareTag("Character"))
                 {
-                    Debug.Log("Character clicked");
+                    Debug.Log("Selected Character: " + clickedObject.name);
                     characterSelectionManager.SelectCharacter(clickedObject);
                 }
                 else if (clickedObject.CompareTag("Pet"))
                 {
-                    Debug.Log("Pet clicked");
+                    Debug.Log("Selected Pet: " + clickedObject.name);
                     characterSelectionManager.SelectPet(clickedObject);
                 }
             }
@@ -36,4 +39,3 @@ public class click : MonoBehaviour
         }
     }
 }
-

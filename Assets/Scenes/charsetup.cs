@@ -12,7 +12,6 @@ public class charsetup : MonoBehaviour
         string selectedCharacterName = PlayerPrefs.GetString("SelectedCharacter", "");
         string selectedPetName = PlayerPrefs.GetString("SelectedPet", "");
 
-
         if (string.IsNullOrEmpty(selectedCharacterName) || string.IsNullOrEmpty(selectedPetName))
         {
             Debug.LogError("Selected character or pet not found in PlayerPrefs");
@@ -29,7 +28,7 @@ public class charsetup : MonoBehaviour
         {
             if (characterPrefab.name == characterName)
             {
-                instantiatedCharacter = Instantiate(characterPrefab, new Vector3(3, 0, 0), Quaternion.identity);
+                instantiatedCharacter = Instantiate(characterPrefab, new Vector3(-2, 0, 0), Quaternion.identity);
                 Debug.Log("Instantiated Character: " + characterName);
                 return;
             }
@@ -43,7 +42,7 @@ public class charsetup : MonoBehaviour
         {
             if (petPrefab.name == petName)
             {
-                instantiatedPet = Instantiate(petPrefab, instantiatedCharacter.transform.position + new Vector3(6, 0, 0), Quaternion.identity);
+                instantiatedPet = Instantiate(petPrefab, instantiatedCharacter.transform.position + new Vector3(1, 0, 0), Quaternion.identity);
                 Debug.Log("Instantiated Pet: " + petName);
                 return;
             }
@@ -51,5 +50,3 @@ public class charsetup : MonoBehaviour
         Debug.LogError("Pet prefab not found: " + petName);
     }
 }
-
-

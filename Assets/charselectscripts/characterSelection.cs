@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class characterSelection : MonoBehaviour
 {
@@ -9,19 +8,13 @@ public class characterSelection : MonoBehaviour
     public void SelectCharacter(GameObject character)
     {
         selectedCharacter = character;
+        Debug.Log("Selected Character: " + character.name);
     }
 
     public void SelectPet(GameObject pet)
     {
         selectedPet = pet;
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            ConfirmSelection();
-        }
+        Debug.Log("Selected Pet: " + pet.name);
     }
 
     public void ConfirmSelection()
@@ -34,5 +27,11 @@ public class characterSelection : MonoBehaviour
 
             UnityEngine.SceneManagement.SceneManager.LoadScene("MainGame");
         }
+        else
+        {
+            Debug.LogError("Character or Pet not selected!");
+        }
     }
 }
+
+
