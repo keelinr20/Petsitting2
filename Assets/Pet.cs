@@ -5,6 +5,8 @@ public class Pet : MonoBehaviour
     public Sprite cat;
     public Sprite chicken;
     public Sprite cow;
+    public GameObject person;
+    public float speed;
 
     private SpriteRenderer sr;
     private Rigidbody2D rb;
@@ -26,6 +28,11 @@ public class Pet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        moveToPerson();
+    }
+
+    void moveToPerson()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, person.transform.position, Time.deltaTime * speed);
     }
 }
