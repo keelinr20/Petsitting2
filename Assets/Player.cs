@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public Sprite sprite;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private SpriteRenderer sr;
+    private Rigidbody2D rb;
+
+	void Start()
+	{
+		sr = GetComponent<SpriteRenderer>();
+		rb = GetComponent<Rigidbody2D>();
+
+	}
+
+	void Update()
+	{
+
+	}
 }
