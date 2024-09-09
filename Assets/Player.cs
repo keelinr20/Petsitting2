@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Sprite sprite;
+    public Sprite blueberry;
+	public Sprite orange;
 
     private SpriteRenderer sr;
     private Rigidbody2D rb;
@@ -11,7 +12,12 @@ public class Player : MonoBehaviour
 	{
 		sr = GetComponent<SpriteRenderer>();
 		rb = GetComponent<Rigidbody2D>();
-		sr.sprite = this.sprite;
+		string spriteString = PlayerPrefs.GetString("SelectedCharacter");
+		if (spriteString == "orange")
+		{
+			sr.sprite = orange;
+		}
+		else sr.sprite = blueberry;
 	}
 
 	void Update()

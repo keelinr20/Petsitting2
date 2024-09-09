@@ -9,29 +9,18 @@ public class characterSelection : MonoBehaviour
     {
         selectedCharacter = character;
         Debug.Log("Selected Character: " + character.name);
+        PlayerPrefs.SetString("SelectedCharacter", selectedCharacter.name);
+        PlayerPrefs.Save();
+        
     }
 
     public void SelectPet(GameObject pet)
     {
         selectedPet = pet;
-        Debug.Log("Selected Pet: " + pet.name);
+        PlayerPrefs.SetString("SelectedPet", selectedPet.name);
+        PlayerPrefs.Save();
     }
 
-    public void ConfirmSelection()
-    {
-        if (selectedCharacter != null && selectedPet != null)
-        {
-            PlayerPrefs.SetString("SelectedCharacter", selectedCharacter.name);
-            PlayerPrefs.SetString("SelectedPet", selectedPet.name);
-            PlayerPrefs.Save();
-
-            UnityEngine.SceneManagement.SceneManager.LoadScene("MainGame");
-        }
-        else
-        {
-            Debug.LogError("Character or Pet not selected!");
-        }
-    }
 }
 
 
