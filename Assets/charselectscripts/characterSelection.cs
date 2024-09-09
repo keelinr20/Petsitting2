@@ -30,6 +30,7 @@ public class characterSelection : MonoBehaviour
         {
             PlayerPrefs.SetString("SelectedCharacter", selectedCharacter.name);
             PlayerPrefs.SetString("SelectedPet", selectedPet.name);
+            PlayerPrefs.Save();
 
             UnityEngine.SceneManagement.SceneManager.LoadScene("MainGame");
         }
