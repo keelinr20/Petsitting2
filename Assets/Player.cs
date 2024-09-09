@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
 	{
 		sr = GetComponent<SpriteRenderer>();
 		rb = GetComponent<Rigidbody2D>();
-
+		sr.sprite = this.sprite;
 	}
 
 	void Update()
