@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5665330282504875717}
   - component: {fileID: 6567100088264275416}
   - component: {fileID: 5267296070300135294}
+  - component: {fileID: -2445401206517224508}
+  - component: {fileID: -7897936651635133651}
   m_Layer: 0
   m_Name: orange
   m_TagString: Character
@@ -134,3 +136,29 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.7848712, y: 1.078626}
   m_EdgeRadius: 0
+--- !u!114 &-2445401206517224508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346246978883698752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19473d7743bdc4398b842c83ddaffe37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: -287222390, guid: 29c40620704d043819bfa4c84d42b594, type: 3}
+--- !u!114 &-7897936651635133651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346246978883698752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ef35d6ca984477cafb52fd0454e03f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5

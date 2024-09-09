@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4451651941299448594}
   - component: {fileID: 4375935591631046337}
   - component: {fileID: 7343016798563617034}
+  - component: {fileID: -2744606180038721598}
+  - component: {fileID: 591722971103939170}
   m_Layer: 0
   m_Name: blueberry
   m_TagString: Character
@@ -134,3 +136,29 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8382918, y: 1.0618739}
   m_EdgeRadius: 0
+--- !u!114 &-2744606180038721598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588147575732657812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19473d7743bdc4398b842c83ddaffe37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: -1723162625, guid: 29c40620704d043819bfa4c84d42b594, type: 3}
+--- !u!114 &591722971103939170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588147575732657812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ef35d6ca984477cafb52fd0454e03f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
