@@ -16,10 +16,19 @@ public class moveToMouse : MonoBehaviour
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
-			target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			target.z = transform.position.z;
+			Vector3 newTargetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			newTargetPosition.z = transform.position.z;
+			Vector3 dir = newTargetPosition - transform.position;
+			float dis = dir.magnitude;
+			RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, dis);
+			//if (hit.collider == null)
+			//{
+				target = newTargetPosition;
+			//}
 		}
-		transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+
+		transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * speed);
+
 	}
 }
 
