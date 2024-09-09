@@ -9013,6 +9013,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5465256375194470836, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8967900357974016704}
+    - targetCorrespondingSourceObject: {fileID: 5465256375194470836, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8967900357974016706}
   m_SourcePrefab: {fileID: 100100000, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
 --- !u!1 &8967900357974016703 stripped
 GameObject:
@@ -9061,6 +9064,54 @@ MonoBehaviour:
   cat: {fileID: 7595986285605212588, guid: 7c55634fa8562d1419e341930426c4cd, type: 3}
   chicken: {fileID: 8560451000399327191, guid: 257f7382c771b5e4db595cdc453bb1d5, type: 3}
   cow: {fileID: -5922754114360663000, guid: 3d15144c1f8f36448b67472db6a4b644, type: 3}
+  person: {fileID: 208233018}
+  speed: 2
+--- !u!61 &8967900357974016706
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8967900357974016703}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.125}
+    newSize: {x: 1, y: 1.125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1.125}
+  m_EdgeRadius: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
