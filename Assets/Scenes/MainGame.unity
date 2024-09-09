@@ -8935,17 +8935,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4934459006914614371, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
+      propertyPath: m_Size.y
+      value: 1.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934459006914614371, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7595986285605212588, guid: 7c55634fa8562d1419e341930426c4cd, type: 3}
+    - target: {fileID: 4934459006914614371, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934459006914614371, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5465256375194470836, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
       propertyPath: m_Name
       value: Pet
       objectReference: {fileID: 0}
     - target: {fileID: 5639105785892449681, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.718
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639105785892449681, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7493
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639105785892449681, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.4202068
+      value: 8.849
       objectReference: {fileID: 0}
     - target: {fileID: 5639105785892449681, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.013855878
+      value: -0.329
       objectReference: {fileID: 0}
     - target: {fileID: 5639105785892449681, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8982,8 +9006,61 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5465256375194470836, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8967900357974016705}
+    - targetCorrespondingSourceObject: {fileID: 5465256375194470836, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8967900357974016704}
   m_SourcePrefab: {fileID: 100100000, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
+--- !u!1 &8967900357974016703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5465256375194470836, guid: 1d74d80962e7046ec86ca229d7a9c7de, type: 3}
+  m_PrefabInstance: {fileID: 8967900357974016702}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &8967900357974016704
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8967900357974016703}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &8967900357974016705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8967900357974016703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f6fdae88430a4c06b1e3eb7c43f3228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cat: {fileID: 7595986285605212588, guid: 7c55634fa8562d1419e341930426c4cd, type: 3}
+  chicken: {fileID: 8560451000399327191, guid: 257f7382c771b5e4db595cdc453bb1d5, type: 3}
+  cow: {fileID: -5922754114360663000, guid: 3d15144c1f8f36448b67472db6a4b644, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

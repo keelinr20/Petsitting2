@@ -8,7 +8,6 @@ public class characterSelection : MonoBehaviour
     public void SelectCharacter(GameObject character)
     {
         selectedCharacter = character;
-        Debug.Log("Selected Character: " + character.name);
         PlayerPrefs.SetString("SelectedCharacter", selectedCharacter.name);
         PlayerPrefs.Save();
         
