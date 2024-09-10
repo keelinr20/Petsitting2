@@ -9061,6 +9061,8 @@ MonoBehaviour:
   cat: {fileID: 7595986285605212588, guid: 7c55634fa8562d1419e341930426c4cd, type: 3}
   chicken: {fileID: 8560451000399327191, guid: 257f7382c771b5e4db595cdc453bb1d5, type: 3}
   cow: {fileID: -5922754114360663000, guid: 3d15144c1f8f36448b67472db6a4b644, type: 3}
+  person: {fileID: 208233018}
+  speed: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
