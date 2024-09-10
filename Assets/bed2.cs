@@ -3,10 +3,10 @@ using UnityEngine.UI;
 
 public class Bed2 : MonoBehaviour
 {
-    private float sleep;
     public float interactionRange;
     public Text interactionPrompt;
     public GameObject player;
+    public GameController1 gc;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -52,6 +52,6 @@ public class Bed2 : MonoBehaviour
       void Interact()
     {
         Debug.Log("Sleep need fulfilled");
-        sleep++;
+        gc.replaceSleep();
     }
 }

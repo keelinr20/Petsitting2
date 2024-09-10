@@ -5,6 +5,7 @@ public class Sink : MonoBehaviour
     private float thirst;
     public float interactionRange;
     public GameObject player;
+    public GameController1 gc;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,7 +46,6 @@ public class Sink : MonoBehaviour
 
     void Interact()
     {
-        Debug.Log("Thirst need fulfilled");
-        thirst++;
+        gc.replaceThirst();
     }
 }

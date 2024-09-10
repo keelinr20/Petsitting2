@@ -5,6 +5,7 @@ public class Books : MonoBehaviour
     private float entertainment;
     public float interactionRange;
     public GameObject player;
+    public GameController1 gc;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,8 +46,7 @@ public class Books : MonoBehaviour
 
     void Interact()
     {
-        Debug.Log("Entertainment need fulfilled");
-        entertainment++;
+        gc.replaceEntertainment();
     }
 }
 

@@ -5,6 +5,8 @@ public class Shower : MonoBehaviour
     private float hygiene;
     public float interactionRange;
     public GameObject player;
+    public GameController1 gc;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,7 +47,6 @@ public class Shower : MonoBehaviour
 
     void Interact()
     {
-        Debug.Log("Hygiene need fulfilled");
-        hygiene++;
+        gc.replaceHygiene();
     }
 }

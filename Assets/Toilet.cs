@@ -5,6 +5,7 @@ public class Toilet : MonoBehaviour
     private float bathroom;
     public float interactionRange;
     public GameObject player;
+    public GameController1 gc;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,7 +46,6 @@ public class Toilet : MonoBehaviour
 
     void Interact()
     {
-        Debug.Log("Bathroom need fulfilled");
-        bathroom++;
+        gc.replaceBathroom();
     }
 }

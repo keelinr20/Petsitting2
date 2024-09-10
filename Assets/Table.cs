@@ -5,6 +5,7 @@ public class Table1 : MonoBehaviour
     private float hunger;
     public float interactionRange;
     public GameObject player;
+    public GameController1 gc;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,7 +46,6 @@ public class Table1 : MonoBehaviour
 
     void Interact()
     {
-        Debug.Log("Hunger need fulfilled");
-        hunger++;
+        gc.replaceHunger();
     }
 }
