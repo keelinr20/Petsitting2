@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainGameReal.unity
     guid: 8ef1af70bb76541089a954a9026d70be
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 7059186c6676a4313be73b6106f3de53
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

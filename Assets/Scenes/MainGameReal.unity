@@ -160,6 +160,7 @@ GameObject:
   - component: {fileID: 151895580}
   - component: {fileID: 151895579}
   - component: {fileID: 151895578}
+  - component: {fileID: 151895581}
   m_Layer: 0
   m_Name: shower
   m_TagString: shower
@@ -283,6 +284,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &151895581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151895577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85dde6e609c9465caeff11066b3153c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRange: 0
+  player: {fileID: 151895577}
+  gc: {fileID: 0}
 --- !u!1 &161432226
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,6 +5015,7 @@ GameObject:
   - component: {fileID: 322843043}
   - component: {fileID: 322843042}
   - component: {fileID: 322843041}
+  - component: {fileID: 322843044}
   m_Layer: 0
   m_Name: toilet
   m_TagString: toilet
@@ -5112,6 +5129,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &322843044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322843040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183270561b34f466fa8267de0c1b3721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRange: 0
+  player: {fileID: 322843040}
+  gc: {fileID: 0}
 --- !u!1001 &437545507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7096,6 +7128,7 @@ GameObject:
   - component: {fileID: 1236308361}
   - component: {fileID: 1236308360}
   - component: {fileID: 1236308359}
+  - component: {fileID: 1236308362}
   m_Layer: 0
   m_Name: books
   m_TagString: books
@@ -7219,6 +7252,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1236308362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236308358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d0b92b92cd64c82a698658f2f6e534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRange: 0
+  player: {fileID: 1236308358}
+  gc: {fileID: 0}
 --- !u!1 &1300387260
 GameObject:
   m_ObjectHideFlags: 0
@@ -7317,6 +7365,7 @@ GameObject:
   - component: {fileID: 1463268804}
   - component: {fileID: 1463268803}
   - component: {fileID: 1463268802}
+  - component: {fileID: 1463268805}
   m_Layer: 0
   m_Name: sink
   m_TagString: sink
@@ -7440,6 +7489,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1463268805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463268801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85dde6e609c9465caeff11066b3153c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRange: 0
+  player: {fileID: 1463268801}
+  gc: {fileID: 0}
 --- !u!1001 &1474798804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8314,6 +8378,7 @@ GameObject:
   - component: {fileID: 1801203116}
   - component: {fileID: 1801203115}
   - component: {fileID: 1801203114}
+  - component: {fileID: 1801203117}
   m_Layer: 0
   m_Name: bed
   m_TagString: bed
@@ -8437,6 +8502,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1801203117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801203113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d45b1439570e4ffb9786b152391e68a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRange: 0
+  interactionPrompt: {fileID: 0}
+  player: {fileID: 1801203113}
+  gc: {fileID: 0}
 --- !u!1 &1828679287
 GameObject:
   m_ObjectHideFlags: 0
@@ -8448,6 +8529,7 @@ GameObject:
   - component: {fileID: 1828679290}
   - component: {fileID: 1828679289}
   - component: {fileID: 1828679288}
+  - component: {fileID: 1828679291}
   m_Layer: 0
   m_Name: table
   m_TagString: table
@@ -8561,6 +8643,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1828679291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828679287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5704324f32e49928ae58fabdf55361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRange: 0
+  player: {fileID: 1828679287}
+  gc: {fileID: 0}
 --- !u!1 &1939678996
 GameObject:
   m_ObjectHideFlags: 0
