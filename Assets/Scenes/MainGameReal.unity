@@ -5244,13 +5244,13 @@ MonoBehaviour:
   thirst: 0
   entertainment: 0
   sleep: 0
-  gameTimer: 30
-  hungerDecSpeed: 0.15
-  bathroomDecSpeed: 0.25
-  hygieneDecSpeed: 0.45
-  thirstDecSpeed: 0.2
-  entertainmentDecSpeed: 0.5
-  sleepDecSpeed: 0.4
+  gameTimer: 60
+  hungerDecSpeed: 0.25
+  bathroomDecSpeed: 0.3
+  hygieneDecSpeed: 0.2
+  thirstDecSpeed: 0.25
+  entertainmentDecSpeed: 0.15
+  sleepDecSpeed: 0.2
 --- !u!4 &652828252
 Transform:
   m_ObjectHideFlags: 0
