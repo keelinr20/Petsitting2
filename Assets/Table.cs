@@ -1,20 +1,14 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Bed2 : MonoBehaviour
+public class Table1 : MonoBehaviour
 {
-    private float sleep;
+    private float hunger;
     public float interactionRange;
-    public Text interactionPrompt;
     public GameObject player;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (interactionPrompt != null)
-        {
-            interactionPrompt.enabled = false;
-        }
     }
 
     // Update is called once per frame
@@ -34,7 +28,7 @@ public class Bed2 : MonoBehaviour
 
     }
 
-     void AllowInteraction()
+    void AllowInteraction()
     {
         //interactionPrompt.enabled = true;
         if (Input.GetMouseButtonDown(0))
@@ -49,9 +43,9 @@ public class Bed2 : MonoBehaviour
         }
     }
 
-      void Interact()
+    void Interact()
     {
-        Debug.Log("Sleep need fulfilled");
-        sleep++;
+        Debug.Log("Hunger need fulfilled");
+        hunger++;
     }
 }
