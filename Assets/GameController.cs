@@ -9,6 +9,8 @@ public class GameController1 : MonoBehaviour
     public float entertainment;
     public float sleep;
 
+    public float gameTimer;
+
     public float hungerDecSpeed;
     public float bathroomDecSpeed;
     public float hygieneDecSpeed;
@@ -30,14 +32,15 @@ public class GameController1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        checkDeath();
+        checkEnd();
         hunger -= hungerDecSpeed * Time.deltaTime;
         bathroom -= bathroomDecSpeed * Time.deltaTime;
         hygiene -= hygieneDecSpeed * Time.deltaTime;
         thirst -= thirstDecSpeed * Time.deltaTime;
         entertainment -= entertainmentDecSpeed * Time.deltaTime;
         sleep -= sleepDecSpeed * Time.deltaTime;
-        Debug.Log("Hunger = " + hunger + ", Bathroom = " + bathroom);
+        gameTimer -= Time.deltaTime;
+        Debug.Log("Hunger = " + hunger + ", Bathroom = " + bathroom +  ", Hygiene = " + hygiene + ", Thirst = " + thirst + ", Sleep = " + sleep + ", Entertainment = " + entertainment + ", Game Timer = " + gameTimer);
     }
 
     public void replaceSleep()
@@ -66,9 +69,13 @@ public class GameController1 : MonoBehaviour
         thirst = 10;
     }
 
-    void checkDeath()
+    void checkEnd()
     {
         if (hunger <= 0 || bathroom <= 0 || hygiene <= 0 || thirst <= 0 || entertainment <= 0 || sleep <= 0)
+        {
+            return;
+        }
+        if (gameTimer <= 0)
         {
             return;
         }
