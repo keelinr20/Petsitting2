@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Character
   - Pet
+  - bed
+  - shower
+  - table
+  - sink
+  - toilet
+  - books
   layers:
   - Default
   - TransparentFX

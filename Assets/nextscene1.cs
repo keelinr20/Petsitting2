@@ -14,7 +14,7 @@ public class Game1 : MonoBehaviour
             if (hit.collider != null && hit.collider.gameObject == this.gameObject)
             {
 
-                SceneManager.LoadScene("MainGame");
+                SceneManager.LoadScene("MainGameReal");
             }
         }
     }
