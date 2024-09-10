@@ -2,13 +2,19 @@ using UnityEngine;
 
 public class GameController1 : MonoBehaviour
 {
-    public int hunger;
-    public int bathroom;
-    public int hygiene;
-    public int thirst;
-    public int entertainment;
-    public int sleep;
+    public float hunger;
+    public float bathroom;
+    public float hygiene;
+    public float thirst;
+    public float entertainment;
+    public float sleep;
 
+    public float hungerDecSpeed;
+    public float bathroomDecSpeed;
+    public float hygieneDecSpeed;
+    public float thirstDecSpeed;
+    public float entertainmentDecSpeed;
+    public float sleepDecSpeed;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,7 +30,14 @@ public class GameController1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        checkDeath();
+        hunger -= hungerDecSpeed * Time.deltaTime;
+        bathroom -= bathroomDecSpeed * Time.deltaTime;
+        hygiene -= hygieneDecSpeed * Time.deltaTime;
+        thirst -= thirstDecSpeed * Time.deltaTime;
+        entertainment -= entertainmentDecSpeed * Time.deltaTime;
+        sleep -= sleepDecSpeed * Time.deltaTime;
+        Debug.Log("Hunger = " + hunger + ", Bathroom = " + bathroom);
     }
 
     public void replaceSleep()
@@ -51,6 +64,14 @@ public class GameController1 : MonoBehaviour
     public void replaceThirst()
     {
         thirst = 10;
+    }
+
+    void checkDeath()
+    {
+        if (hunger <= 0 || bathroom <= 0 || hygiene <= 0 || thirst <= 0 || entertainment <= 0 || sleep <= 0)
+        {
+            return;
+        }
     }
 
 }
